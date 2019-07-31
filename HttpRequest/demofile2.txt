@@ -1,0 +1,254 @@
+throughput=6.392217553044717e-10 timeWindow=60000 _mean 0.0
+
+timeWindow=60000 _stdDev 0.0
+
+timeWindow=60000 quantile=0.33 0.0
+
+timeWindow=60000 quantile=0.5 0.0
+
+timeWindow=60000 quantile=0.66 0.0
+
+timeWindow=60000 quantile=0.99 0.0
+
+timeWindow=60000 quantile=0.999 0.0
+
+timeWindow=300000 _mean 0.0
+
+timeWindow=300000 _stdDev 0.0
+
+timeWindow=300000 quantile=0.33 0.0
+
+timeWindow=300000 quantile=0.5 0.0
+
+timeWindow=300000 quantile=0.66 0.0
+
+timeWindow=300000 quantile=0.99 0.0
+
+timeWindow=300000 quantile=0.999 0.0
+
+timeWindow=900000 _mean 0.0
+
+timeWindow=900000 _stdDev 0.0
+
+timeWindow=900000 quantile=0.33 0.0
+
+timeWindow=900000 quantile=0.5 0.0
+
+timeWindow=900000 quantile=0.66 0.0
+
+timeWindow=900000 quantile=0.99 0.0
+
+timeWindow=900000 quantile=0.999 0.0
+
+throughput=6.392217512026463e-10 timeWindow=60000 _mean 0.0
+
+timeWindow=60000 _stdDev 0.0
+
+timeWindow=60000 quantile=0.33 0.0
+
+timeWindow=60000 quantile=0.5 0.0
+
+timeWindow=60000 quantile=0.66 0.0
+
+timeWindow=60000 quantile=0.99 0.0
+
+timeWindow=60000 quantile=0.999 0.0
+
+timeWindow=300000 _mean 0.0
+
+timeWindow=300000 _stdDev 0.0
+
+timeWindow=300000 quantile=0.33 0.0
+
+timeWindow=300000 quantile=0.5 0.0
+
+timeWindow=300000 quantile=0.66 0.0
+
+timeWindow=300000 quantile=0.99 0.0
+
+timeWindow=300000 quantile=0.999 0.0
+
+timeWindow=900000 _mean 0.0
+
+timeWindow=900000 _stdDev 0.0
+
+timeWindow=900000 quantile=0.33 0.0
+
+timeWindow=900000 quantile=0.5 0.0
+
+timeWindow=900000 quantile=0.66 0.0
+
+timeWindow=900000 quantile=0.99 0.0
+
+timeWindow=900000 quantile=0.999 0.0
+
+throughput=6.392217471028342e-10 timeWindow=60000 _mean 0.0
+
+timeWindow=60000 _stdDev 0.0
+
+timeWindow=60000 quantile=0.33 0.0
+
+timeWindow=60000 quantile=0.5 0.0
+
+timeWindow=60000 quantile=0.66 0.0
+
+timeWindow=60000 quantile=0.99 0.0
+
+timeWindow=60000 quantile=0.999 0.0
+
+timeWindow=300000 _mean 0.0
+
+timeWindow=300000 _stdDev 0.0
+
+timeWindow=300000 quantile=0.33 0.0
+
+timeWindow=300000 quantile=0.5 0.0
+
+timeWindow=300000 quantile=0.66 0.0
+
+timeWindow=300000 quantile=0.99 0.0
+
+timeWindow=300000 quantile=0.999 0.0
+
+timeWindow=900000 _mean 0.0
+
+timeWindow=900000 _stdDev 0.0
+
+timeWindow=900000 quantile=0.33 0.0
+
+timeWindow=900000 quantile=0.5 0.0
+
+timeWindow=900000 quantile=0.66 0.0
+
+timeWindow=900000 quantile=0.99 0.0
+
+timeWindow=900000 quantile=0.999 0.0
+
+throughput=6.39221743003349e-10 timeWindow=60000 _mean 0.0
+
+timeWindow=60000 _stdDev 0.0
+
+timeWindow=60000 quantile=0.33 0.0
+
+timeWindow=60000 quantile=0.5 0.0
+
+timeWindow=60000 quantile=0.66 0.0
+
+timeWindow=60000 quantile=0.99 0.0
+
+timeWindow=60000 quantile=0.999 0.0
+
+timeWindow=300000 _mean 0.0
+
+timeWindow=300000 _stdDev 0.0
+
+timeWindow=300000 quantile=0.33 0.0
+
+timeWindow=300000 quantile=0.5 0.0
+
+timeWindow=300000 quantile=0.66 0.0
+
+timeWindow=300000 quantile=0.99 0.0
+
+timeWindow=300000 quantile=0.999 0.0
+
+timeWindow=900000 _mean 0.0
+
+timeWindow=900000 _stdDev 0.0
+
+timeWindow=900000 quantile=0.33 0.0
+
+timeWindow=900000 quantile=0.5 0.0
+
+timeWindow=900000 quantile=0.66 0.0
+
+timeWindow=900000 quantile=0.99 0.0
+
+timeWindow=900000 quantile=0.999 0.0
+
+throughput=6.39221738905376e-10 timeWindow=60000 _mean 0.0
+
+timeWindow=60000 _stdDev 0.0
+
+timeWindow=60000 quantile=0.33 0.0
+
+timeWindow=60000 quantile=0.5 0.0
+
+timeWindow=60000 quantile=0.66 0.0
+
+timeWindow=60000 quantile=0.99 0.0
+
+timeWindow=60000 quantile=0.999 0.0
+
+timeWindow=300000 _mean 0.0
+
+timeWindow=300000 _stdDev 0.0
+
+timeWindow=300000 quantile=0.33 0.0
+
+timeWindow=300000 quantile=0.5 0.0
+
+timeWindow=300000 quantile=0.66 0.0
+
+timeWindow=300000 quantile=0.99 0.0
+
+timeWindow=300000 quantile=0.999 0.0
+
+timeWindow=900000 _mean 0.0
+
+timeWindow=900000 _stdDev 0.0
+
+timeWindow=900000 quantile=0.33 0.0
+
+timeWindow=900000 quantile=0.5 0.0
+
+timeWindow=900000 quantile=0.66 0.0
+
+timeWindow=900000 quantile=0.99 0.0
+
+timeWindow=900000 quantile=0.999 0.0
+
+throughput=6.392217348049961e-10 timeWindow=60000 _mean 0.0
+
+timeWindow=60000 _stdDev 0.0
+
+timeWindow=60000 quantile=0.33 0.0
+
+timeWindow=60000 quantile=0.5 0.0
+
+timeWindow=60000 quantile=0.66 0.0
+
+timeWindow=60000 quantile=0.99 0.0
+
+timeWindow=60000 quantile=0.999 0.0
+
+timeWindow=300000 _mean 0.0
+
+timeWindow=300000 _stdDev 0.0
+
+timeWindow=300000 quantile=0.33 0.0
+
+timeWindow=300000 quantile=0.5 0.0
+
+timeWindow=300000 quantile=0.66 0.0
+
+timeWindow=300000 quantile=0.99 0.0
+
+timeWindow=300000 quantile=0.999 0.0
+
+timeWindow=900000 _mean 0.0
+
+timeWindow=900000 _stdDev 0.0
+
+timeWindow=900000 quantile=0.33 0.0
+
+timeWindow=900000 quantile=0.5 0.0
+
+timeWindow=900000 quantile=0.66 0.0
+
+timeWindow=900000 quantile=0.99 0.0
+
+timeWindow=900000 quantile=0.999 0.0
+
+Scenario name,timeWindow,type,value
+dgdsgds
