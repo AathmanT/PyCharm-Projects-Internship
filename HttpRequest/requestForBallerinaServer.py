@@ -7,10 +7,13 @@ filter=""
 splitter=""
 
 previous_time=time.time()
-bal_file=sys.argv[1]
+previous_requests=0
+
+bal_file="h1_h1_passthrough.balx"
+
 if(bal_file=="h1_transformation.balx"):
 	filter="response_time_seconds(?:_mean|_stdDev|{).*transformationService\$\$service\$0.*timeWindow=\"(?:300000|60000|900000)\".*(?:quantile=\"0.999\"|quantile=\"0.99\"|,}).*"
-	throughput_filter="http_requests_total_value.*transformationService\$\$service\$00.*"
+	throughput_filter="http_requests_total_value.*transformationService\$\$service\$0.*"
 	splitter="{protocol=\"http\",http_method=\"POST\",resource=\"transform\",http_url=\"/transform\",service=\"transformationService$$service$0\","
 elif(bal_file=="h1_h1_passthrough.balx"):
 	filter = "response_time_seconds(?:_mean|_stdDev|{).*passthroughService\$\$service\$0.*timeWindow=\"(?:300000|60000|900000)\".*(?:quantile=\"0.999\"|quantile=\"0.99\"|,}).*"
@@ -29,6 +32,7 @@ f.close()
 def query_metrics():
 	try:
 		global previous_time
+		global previous_requests
 		f = open("demofile2.txt", "a")
 
 		URL = "http://127.0.0.1:9797/metrics"
@@ -55,8 +59,10 @@ def query_metrics():
 
 			throughput = re.findall(throughput_filter, line)
 			if(throughput):
-				f.write(throughput[0]+"\n")
-				f.write(bal_file+",60000,throughput," + str(float((throughput[0].split(" "))[1]) / (current_time - previous_time)) + "\n")
+				#f.write(throughput[0]+"\n")
+				current_requests=float((throughput[0].split(" "))[1])
+				f.write(str(current_requests)+" "+str(previous_requests)+"\n")
+				f.write(bal_file+",timeWindow=60000,throughput," + str((current_requests-previous_requests) / (current_time - previous_time)) + "\n")
 			# x=re.findall("response_time_seconds(?:_mean|_stdDev|{).*guide:0.0.0.orderMgt.*timeWindow=\"(?:300000|60000|900000)\".*(?:quantile=\"(?:0.999|0.99|)\"|).*", line)
 			# x=re.findall("(?:http_response_time_mean{|http_response_time_stdDev|http_response_time_seconds{).*guide:0.0.0.orderMgt.*timeWindow=\"(?:300000|60000|900000)\".*(?:quantile=\"(?:0.999|0.99|)\"|).*", line)
 			# x=re.findall("^http_response_time_seconds_mean.*|^http_response_time_seconds_max.*", line)
@@ -79,21 +85,22 @@ def query_metrics():
 				timeWindow = timeWindowAndQuantile[0] + timeWindowAndQuantile[1]
 
 				f.write(bal_file+","+timeWindow+",")
-				print(timeWindow)
+				#print(timeWindow)
 				if (meanOrStd[1] == ''):
 					quantile = timeWindowAndQuantile[2][1:] + timeWindowAndQuantile[3]
-					print(quantile)
+					#print(quantile)
 					f.write(quantile+",")
 				else:
-					print(meanOrStd[1])
+					#print(meanOrStd[1])
 					f.write(meanOrStd[1]+",")
 
-				print(y[1], "\n\n")
+				#print(y[1], "\n\n")
 				f.write(y[1]+ "\n\n")
 
 		f.close()
 		previous_time=current_time
-	except Exception as e :
+		previous_requests=current_requests
+	except Exception as e:
 		print(e)
 
 
