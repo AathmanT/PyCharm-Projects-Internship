@@ -44,7 +44,7 @@ def query_metrics():
 
 		data=r.text
 		data_list=data.split("\n")
-
+		print(data)
 
 
 
